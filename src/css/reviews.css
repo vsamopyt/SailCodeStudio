@@ -1,5 +1,5 @@
 .section-reviews {
-  outline: 1px solid red;
+  
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -95,13 +95,24 @@
 @media screen and (min-width: 1280px) {
   .section-reviews {
     max-width: 1180px;
+     align-items: center;
+  }
+
+   
+  }
+  .reviews-title {
+    max-width: 854px;
   }
 
   .reviews-title-text {
     font-size: 16px;
     line-height: 1.4;
     max-width: 571px;
+
     align-items: center;
+
+    
+
   }
   .reviews-list {
     display: flex;
