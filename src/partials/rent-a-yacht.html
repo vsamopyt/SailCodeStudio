@@ -29,9 +29,40 @@
       </div>
       <button class="rent-btn" type="submit">Send</button>
     </form>
-    <img
-      src="../img/rent-section-img/rent-yacht-section-mob-1x.png"
-      alt="Rent a yacht"
-    />
+    <picture>
+      <source
+        srcset="
+          ../img/rent-section-img/rent-yacht-section-descktop1440-1x.png 1x,
+          ../img/rent-section-img/rent-yacht-section-descktop1440-2x.png 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="
+          ../img/rent-section-img/rent-yacht-section-descktop1280-1x.png 1x,
+          ../img/rent-section-img/rent-yacht-section-descktop1280-2x.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ../img/rent-section-img/rent-yacht-section-tablet-1x.png 1x,
+          ../img/rent-section-img/rent-yacht-section-tablet-2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ../img/rent-section-img/rent-yacht-section-mob-1x.png 1x,
+          ../img/rent-section-img/rent-yacht-section-mob-2x.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        src="../img/rent-section-img/rent-yacht-section-mob-1x.png"
+        alt="Rent a yacht"
+        class="rent-img"
+      />
+    </picture>
   </div>
 </section>
