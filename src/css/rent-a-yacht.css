@@ -1,3 +1,68 @@
 .section-rents {
-    outline:1px solid red;
+  outline: 1px solid red;
+}
+
+.rent-container {
+  padding: 0 20px;
+}
+
+.rents-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 40px;
+}
+
+.rent-form-inputs {
+  margin-bottom: 40px;
+}
+
+.rent-input {
+  width: 100%;
+  height: 42px;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 18px;
+  background-color: transparent;
+}
+
+.rent-input::placeholder,
+.rent-form-comment::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  color: rgba(251, 251, 251, 0.4);
+}
+
+.rent-form-comment {
+  width: 100%;
+  min-height: 108px;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 18px;
+  background-color: transparent;
+}
+
+.rent-btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  border-radius: 15px;
+  border: none;
+  padding: 14px 14px;
+  min-width: 122px;
+  height: 46px;
+  background: #1b414b;
+  margin-bottom: 80px;
+}
+
+.rent-img {
+  margin-bottom: 80px;
 }
