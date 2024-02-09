@@ -1,5 +1,69 @@
-.header {
-    outline: 1px solid red;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    border: 1px solid #fbfbfb;
+    border-radius: 8px;
+    width: 1240px;
+    height: 48px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: #fbfbfb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 20px auto;
+    max-width: 1240px;
+    width: calc(100% - 40px);
+}
+
+.logo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    text-transform: lowercase; 
+    color: #1b414b;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px;
+    width: 91px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family); 
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 130%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.yachts-button,
+.reviews-button {
+    background-color: rgba(27, 65, 75, 0.5);
+}
+.about-button {
+    background: #1b414b;
 }
 
 
