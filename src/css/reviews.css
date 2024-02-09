@@ -1,5 +1,4 @@
 .section-reviews {
-  
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -31,8 +30,8 @@
 }
 
 .reviews-list-item {
-  max-width: 335px;
-  max-height: 282px;
+  min-width: 335px;
+
   background-color: #fbfbfb;
   display: flex;
   flex-direction: column;
@@ -95,11 +94,9 @@
 @media screen and (min-width: 1280px) {
   .section-reviews {
     max-width: 1180px;
-     align-items: center;
+    align-items: center;
   }
 
-   
-  }
   .reviews-title {
     max-width: 854px;
   }
@@ -110,9 +107,6 @@
     max-width: 571px;
 
     align-items: center;
-
-    
-
   }
   .reviews-list {
     display: flex;
