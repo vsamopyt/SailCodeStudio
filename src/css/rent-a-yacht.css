@@ -136,7 +136,8 @@
   }
 
   .rent-title-form {
-    position: static;
+    /* position: static; */
+    padding-left: 0;
   }
   .rent-img {
     border-radius: 0;
