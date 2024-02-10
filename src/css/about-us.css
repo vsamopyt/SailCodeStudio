@@ -1,4 +1,6 @@
-/* about-us */
+.container {
+  padding-inline: 0;
+}
 
 .about-us {
   padding-top: 50px;
