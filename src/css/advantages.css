@@ -1,3 +1,165 @@
 .section-advantages {
     outline: 1px solid red;
 }
+
+.avantages-container {
+    width: 100%;
+    max-width: 320px;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+   
+
+}
+
+.visully-hidden-advantages {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.avantages-list {
+list-style-type: none;
+background-color: #1B414B;
+border-radius: 18px;
+padding-top: 80px;
+padding-bottom: 80px;
+}
+.rounded-rectangle {
+    background-color: #FBFBFB;
+    background-color: rgba(251, 251, 251, 0.1);
+    max-width: 295px;
+    height: 2px;
+    border-radius: 18px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.avantages-item {
+    margin-bottom: 40px;
+}
+.avantages-subtitle {
+
+}
+.avantages-text {
+color: #FBFBFB;;
+font-style: Inter;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: -0.02;
+min-width: 292px;
+
+}
+.advantages-image {
+background-image: url(./src/img/advantagesimages/advantages-mob.png);
+
+background-size: cover;
+background-position: center;
+height: 424px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .avantages-container {
+        max-width: 768px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+     }
+     .avantages-list {
+        display: flex;
+       
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 90px;
+        padding-bottom: 90px;
+        float: left;
+        width: 70%;
+    }
+       .avantages-item {
+        
+        width: calc((100% - 3 * 32px) / 2);
+        overflow: hidden;
+        margin: 0 16px 16px 0;
+        box-sizing: border-box;
+        /* float: none; */
+     }
+        .rounded-rectangle {
+        max-width: 304px;
+        }
+
+        .advantages-image {
+             background-image: url(./src/img/advantagesimages/advantages-tab.png);
+             background-size: cover;
+             background-position: center;
+             height: 424px;
+             float: right;
+             width: 30%;
+         }
+
+
+         @media screen and (min-device-pixel-ratio: 2),
+         (min-resolution: 2dppx),
+         (min-resolution: 192dpi) {
+           background-image: url(../src/img/advantagesimages/advantages-tab2x.png);
+         }
+         
+}
+
+
+
+@media screen and (min-width: 1280px) {
+    .avantages-container {
+        max-width: 1280px;
+        flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+      }
+           
+    
+           .avantages-item {
+            width: calc((100% - 3 * 32px) / 2);
+            overflow: hidden;
+           }
+
+            .avantages-list {
+                float: left;
+                width: 70%;
+            }
+
+            .rounded-rectangle {
+                min-width: 280px;
+            }
+
+
+
+
+           .advantages-image {
+               background-image: url(./src/img/advantagesimages/advantages-desck.png);
+               background-size: cover;
+               background-position: center;
+               height: 424px;
+               float: right;
+               width: 30%;
+           }
+    
+    
+           @media screen and (min-device-pixel-ratio: 2),
+           (min-resolution: 2dppx),
+           (min-resolution: 192dpi) {
+               background-image: url(./src/img/advantagesimages/advantages-des2x.png);
+           }
+
+    
+    }
