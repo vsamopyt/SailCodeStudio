@@ -35,9 +35,9 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
+nav ul li  {
     display: inline;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 nav ul li a {
@@ -56,6 +56,12 @@ nav ul li a {
     line-height: 130%;
     text-transform: uppercase;
     text-align: center;
+    
+}
+
+.nav-header {
+    display: inline-flex;
+    gap: 8px;
 }
 
 .yachts-button,
@@ -64,6 +70,61 @@ nav ul li a {
 }
 .about-button {
     background: #1b414b;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    .social-icons,
+    .main-menu {
+        display: none; 
+    }
+
+    .menu-toggle {
+        display: block; 
+    }
+
+    .menu-toggle svg {
+        fill: #1b414b; 
+        cursor: pointer; 
+    }
+
+    .menu-toggle svg:hover {
+        opacity: 0.7; 
+    }
+
+    .menu-toggle.active + .main-menu {
+        display: block; 
+    }
+
+    .main-menu ul {
+        background-color: #fbfbfb;
+        border: 1px solid #fbfbfb; 
+        border-radius: 8px; 
+        padding: 10px; 
+        position: absolute; 
+        top: 50px; 
+        left: 0; 
+        z-index: 999; 
+    }
+
+    .main-menu ul li {
+        display: block; 
+        margin-bottom: 10px; 
+    }
+
+    .main-menu ul li a {
+        color: #1b414b; 
+        text-decoration: none; 
+        font-size: 16px; 
+        display: block; 
+    }
 }
 
 
