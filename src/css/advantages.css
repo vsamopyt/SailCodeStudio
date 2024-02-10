@@ -62,7 +62,7 @@ min-width: 292px;
 
 }
 .advantages-image {
-background-image: url(./src/img/advantagesimages/advantages-mob.png);
+/* background-image: url(./src/); */
 
 background-size: cover;
 background-position: center;
@@ -72,7 +72,7 @@ height: 424px;
 
 @media screen and (min-width: 768px) {
     .avantages-container {
-        max-width: 768px;
+        min-width: 768px;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -100,19 +100,12 @@ height: 424px;
         }
 
         .advantages-image {
-             background-image: url(./src/img/advantagesimages/advantages-tab.png);
+             /* background-image: url(./src/img/advantagesimages/advantages-tab.png); */
              background-size: cover;
              background-position: center;
              height: 424px;
              float: right;
              width: 30%;
-         }
-
-
-         @media screen and (min-device-pixel-ratio: 2),
-         (min-resolution: 2dppx),
-         (min-resolution: 192dpi) {
-           background-image: url(../src/img/advantagesimages/advantages-tab2x.png);
          }
          
 }
@@ -121,7 +114,7 @@ height: 424px;
 
 @media screen and (min-width: 1280px) {
     .avantages-container {
-        max-width: 1280px;
+        min-width: 1280px;
         flex-direction: row;
             align-items: center;
             justify-content: space-between;
@@ -146,7 +139,7 @@ height: 424px;
 
 
            .advantages-image {
-               background-image: url(./src/img/advantagesimages/advantages-desck.png);
+               /* background-image: url(./src/img/advantagesimages/advantages-desck.png); */
                background-size: cover;
                background-position: center;
                height: 424px;
@@ -154,12 +147,4 @@ height: 424px;
                width: 30%;
            }
     
-    
-           @media screen and (min-device-pixel-ratio: 2),
-           (min-resolution: 2dppx),
-           (min-resolution: 192dpi) {
-               background-image: url(./src/img/advantagesimages/advantages-des2x.png);
-           }
-
-    
-    }
+     }
