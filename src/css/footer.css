@@ -56,7 +56,8 @@
   justify-content: center;
   align-items: center;
 }
-.footer-item-menu:hover {
+.footer-item-menu:hover,
+.footer-item-menu:focus {
   color: #1b414b;
   background: #fbfbfb;
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
@@ -82,6 +83,10 @@
 
 .footer-svg-social {
   fill: #ffffff;
+}
+.footer-svg-social:hover,
+.footer-svg-social:focus {
+  fill: rgba(251, 251, 251, 0.8);
 }
 
 .footer-slogan-privacy-container {
