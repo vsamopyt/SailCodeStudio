@@ -1,9 +1,9 @@
 :root {
   --font-family: 'Inter', sans-serif;
 }
-/* .footer {
-  max-width: 355px;
-} */
+.footer {
+  padding-top: 40px;
+}
 .footer-container {
   /* outline: 1px solid red; */
   max-width: 355px;
@@ -150,6 +150,9 @@
   .footer-container {
     max-width: 736px;
     padding-top: 50px;
+  }
+  .footer {
+    padding-top: 75px;
   }
 }
 /* Desktop 1280px */
