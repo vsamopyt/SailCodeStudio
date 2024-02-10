@@ -17,7 +17,7 @@
     />
     
     <script type="module" crossorigin src="/sail-code-studio/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/sail-code-studio/assets/index-d6577e60.css">
+    <link rel="stylesheet" href="/sail-code-studio/assets/index-0726bb3d.css">
   </head>
   <body>
     <header class="header">
@@ -291,8 +291,20 @@
                 
             </li>
         </ol>
-        <div class="advantages-image"><img src="./src/img/advantagesimages/advantages-mob.png" alt="yacht inside"></div>
-    </div>
+        <picture>
+            <source srcset="/sail-code-studio/assets/advantages-desck-33c45480.png 1x, /sail-code-studio/assets/advantages-des2x-7fead830.png 2x"
+            media="(min-width: 1280px)"
+            />
+            <source srcset="/sail-code-studio/assets/advantages-tab-a1b02955.png 1x, /sail-code-studio/assets/advantages-tab2x-db5963a3.png 2x" 
+                        media="(min-width: 768px)" 
+                        />
+            <source srcset="/sail-code-studio/assets/advantages-mob-7bd87775.png 1x, /sail-code-studio/assets/advantages-mob2x-a7034814.png 2x" 
+                        media="(max-width: 767px)"
+                         />
+            <img src="/sail-code-studio/assets/advantages-mob-7bd87775.png" alt="yacht inside" 
+            class="advantages-image"/>
+             </picture>
+       </div>
 </section>
     <section class="section section-rents" id="section-rents">
   <div class="container rent-container">
