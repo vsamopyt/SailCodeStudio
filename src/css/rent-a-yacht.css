@@ -75,8 +75,8 @@
 
 @media screen and (min-width: 768px) {
   .rent-title-form {
-    position: relative;
-    left: 116px;
+    /* position: relative; */
+    padding-left: 116px;
   }
 
   .section-rents {
