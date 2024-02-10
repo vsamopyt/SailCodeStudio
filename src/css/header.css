@@ -40,6 +40,7 @@ nav ul li  {
     margin-right: 0px;
 }
 
+
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -62,8 +63,8 @@ nav ul li a {
 .nav-header {
     display: inline-flex;
     gap: 8px;
-    color:#1b414b;
 }
+
 
 .yachts-button,
 .reviews-button {
