@@ -64,8 +64,6 @@
   min-width: 122px;
   height: 46px;
   background: #1b414b;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rent-btn:hover,
@@ -146,6 +144,11 @@
 
   .rent-form {
     margin: 0;
+  }
+
+  .rent-btn {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
