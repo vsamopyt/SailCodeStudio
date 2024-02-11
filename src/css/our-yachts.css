@@ -149,8 +149,8 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    /* width: 100%;
-    max-width: 734px; */
+    width: 100%;
+    max-width: 734px; 
     padding-inline: 15px;
     /* margin-inline: auto; */
   
@@ -164,13 +164,17 @@
   .yachts-title {
     margin-bottom: 75px;
     font-size: 48px; 
-    width:645px;
+    max-width: 610px;
   
   }
 
   .yachts-subtitle {
     font-size: 16px;
     line-height: 1.2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 149px;
   }
 
   .yachts-text-type {
@@ -221,7 +225,7 @@
   }
 
   .yachts-title {
-    width: 714px;
+    max-width: 650px;
     margin-inline: auto;
   }
 
@@ -241,6 +245,15 @@
   background-color: #fbfbfb;
   color: #1b414b;
 }
+
+.yachts-subtitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 177px;
+}
+
+
 /* .yachts-title {
   margin-bottom: 75px;
   font-size: 48px; 
