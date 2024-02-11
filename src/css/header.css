@@ -19,7 +19,6 @@ header {
     top: 20px;
     max-width: 1240px;
     width: calc(100% - 40px);
-    position: absolute;
 }
 
 .logo-header {
@@ -158,6 +157,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 12px;
+    position: absolute;
+    top: 68px;
   }
   
   .modal-header {
@@ -172,7 +173,7 @@ header {
   }
   
   .logo-modal {
-    color: #000000; /* цвет текста логотипа */
+    color: #1b414b;
   }
   
   .modal-close-btn {
@@ -180,6 +181,10 @@ header {
     border: none;
     cursor: pointer;
     padding: 0;
+  }
+
+  .modal-close-icon {
+    fill: #055545;
   }
   
   .menu-modal {
@@ -190,35 +195,47 @@ header {
   }
   
   .menu-btn {
-    background-color: #1B414B;
+    border-radius: 8px;
     border: none;
-    color: #ffffff;
+    width: 91px;
+    height: 40px;
+    background: rgba(27, 65, 75, 0.5);
+    color: white;
     font-size: 14px;
     cursor: pointer;
     padding: 8px 16px;
     margin-bottom: 8px;
-    width: 91px;
-    height: 40px;
-    border-radius: 8px;
     transition: background-color 0.3s ease;
+  }
+  
+  .menu-btn:hover {
+    background: #1b414b;
   }
   
   .social-icons-modal {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 120px; /* отступ от кнопок about yachts reviews */
+    margin-top: 120px;
   }
   
-  .social-icons .modal-svg {
+  .social-icon-modal {
+    display: inline;
+    margin-right: 8px; 
+  }
+  
+  .modal-svg {
     width: 24px;
     height: 24px;
-    margin: 0 8px;
     transition: filter 0.3s ease;
   }
   
-  .social-icons .modal-svg:hover {
+  .modal-svg:hover {
     filter: grayscale(100%);
+  }
+
+  .social-icon-modal:hover .modal-svg {
+    fill: #ffffff; 
   }
   
   
