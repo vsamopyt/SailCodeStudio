@@ -17,14 +17,14 @@
     />
     
     <script type="module" crossorigin src="/sail-code-studio/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/sail-code-studio/assets/index-dc390c27.css">
+    <link rel="stylesheet" href="/sail-code-studio/assets/index-f848a527.css">
   </head>
   <body>
     <header>
-  <div class="logo-header">
+  <div class="logo-header"  id="logo-header">
       <a href="./index.html">YachtJet</a>
   </div>
-  <div class="menu-toggle">
+  <div class="menu-toggle" id="menu-toggle">
       <button class="header-button" type="button">
           <svg class="header-svg" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3.5 17.5H24.5M3.5 10.5H24.5" stroke="#1B414B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -38,7 +38,7 @@
           <li class="header-li"><a href="./index.html" class="header-a nav-link reviews-button">Reviews</a></li>
       </ul>
   </nav>
-  <div class="social-icons">
+  <div class="social-icons" id="social-icons">
       <ul class="nav-header">
           <li class="header-li">
               <a class="header-aa" href="https://www.instagram.com/goitclub/">
@@ -63,9 +63,9 @@
           </li>
       </ul>
   </div>
-  <div class="backdrop is-open">
-    <div class="modal">
-      <div class="modal-header">
+  <div class="backdrop is-open" id="backdrop">
+    <div class="modal" id="modal">
+      <div class="modal-header" id="modal-header">
         <span class="logo-modal">yachtjet</span>
         <button type="button" class="modal-close-btn">
           <svg width="16" height="16" class="modal-close-icon">
@@ -73,27 +73,33 @@
           </svg>
         </button>
       </div>
-      <div class="menu-modal">
-        <button class="menu-btn">About</button>
-        <button class="menu-btn">Yachts</button>
-        <button class="menu-btn">Reviews</button>
+      <div class="menu-modal" id="menu-modal">
+        <button class="menu-btn">About
+          <a href="./index.html"></a>
+        </button>
+        <button class="menu-btn">Yachts
+          <a href="./index.html"></a>
+        </button>
+        <button class="menu-btn">Reviews
+          <a href="./index.html"></a>
+        </button>
       </div>
-      <div class="social-icons-modal">
-        <div class="social-icon-modal">
+      <div class="social-icons-modal" id="social-icons-modal">
+        <div class="social-icon-modal" id="social-icons-modal">
           <a href="https://www.instagram.com/goitclub/">
             <svg class="modal-svg" width="19" height="19">
               <use href="/sail-code-studio/assets/sprite-1fb73af5.svg#icon-instagram"></use>
             </svg>
           </a>
         </div>
-        <div class="social-icon-modal">
+        <div class="social-icon-modal" id="social-icons-modal">
           <a href="https://www.youtube.com/c/GoIT">
             <svg class="modal-svg" width="19" height="19">
               <use href="/sail-code-studio/assets/sprite-1fb73af5.svg#icon-youtube"></use>
             </svg>
           </a>
         </div>
-        <div class="social-icon-modal">
+        <div class="social-icon-modal" id="social-icons-modal">
           <a href="https://www.facebook.com/goITclub/">
             <svg class="modal-svg" width="19" height="19">
               <use href="/sail-code-studio/assets/sprite-1fb73af5.svg#icon-facebook"></use>
@@ -595,6 +601,6 @@
 
     
     
-    
+  
   </body>
 </html>
