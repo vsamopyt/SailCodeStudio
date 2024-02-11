@@ -15,13 +15,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    margin: 20px auto;
+    margin-inline: auto;
+    top: 20px;
     max-width: 1240px;
     width: calc(100% - 40px);
 }
 
-.logo {
-    font-family: 'Inter', sans-serif;
+.logo-header {
     font-weight: 500;
     font-size: 20px;
     letter-spacing: -0.03em;
@@ -29,19 +29,20 @@ header {
     color: #1b414b;
 }
 
-nav ul {
+.header-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
-nav ul li  {
+.header-ul .header-li {
     display: inline;
-    margin-right: 0px;
+    margin-right: 16px; 
 }
 
-
-nav ul li a {
+.header-a {
+    background: none; 
     color: white;
     text-decoration: none;
     padding: 8px;
@@ -56,8 +57,26 @@ nav ul li a {
     font-size: 9px;
     line-height: 130%;
     text-transform: uppercase;
-    text-align: center;
-    
+}
+
+.header-button {
+    background-color: #fbfbfb;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 40px;
+    height: 40px;
+}
+
+.header-a:hover,
+.header-a:focus {
+    background-color: #1B414B;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
 }
 
 .nav-header {
@@ -65,21 +84,147 @@ nav ul li a {
     gap: 8px;
 }
 
-
-.yachts-button,
-.reviews-button {
-    background-color: rgba(27, 65, 75, 0.5);
+.nav-link {
+    margin-right: 1px;
 }
-.about-button {
-    background: #1b414b;
+
+.nav-header .header-li {
+    margin-right: 0px;
+}
+
+.nav-header .header-a {
+    color: #1b414b;
+    text-decoration: none;
+}
+
+.header-svg {
+    fill: #1b414b;
+}
+
+.header-svg:hover {
+    fill: #0E1823; 
 }
 
 .menu-toggle {
     display: none;
+    cursor: pointer;
 }
 
+.about-button,
+.yachts-button,
+.reviews-button {
+    background-color: rgba(27, 65, 75, 0.5);
+    color: white;
+    text-decoration: none;
+    padding: 12px 0;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-button:hover,
+.yachts-button:hover,
+.reviews-button:hover {
+    background-color: #1B414B;
+}
+
+.backdrop {
+    background-color: rgba(46, 47, 66, 0.4); /* прозрачный фон */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .modal {
+    width: 335px;
+    background-color: #0E1823; 
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+  }
+  
+  .modal-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px; /* отступ снизу для разделения от кнопок */
+    background-color: #fff; /* белый фон для заголовка */
+    border-radius: 5px;
+    padding: 8px;
+  }
+  
+  .logo-modal {
+    color: #000000; /* цвет текста логотипа */
+  }
+  
+  .modal-close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .menu-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px; /* отступ от надписи yachtjet и кнопки SVG */
+  }
+  
+  .menu-btn {
+    background-color: #1B414B;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    width: 91px;
+    height: 40px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-icons-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px; /* отступ от кнопок about yachts reviews */
+  }
+  
+  .social-icons .modal-svg {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
+    transition: filter 0.3s ease;
+  }
+  
+  .social-icons .modal-svg:hover {
+    filter: grayscale(100%);
+  }
+  
+  
+
+/* Медиа-запрос для мобильных устройств */
 @media only screen and (max-width: 768px) {
-    .logo {
+    .logo-header {
         font-size: 18px;
     }
 
@@ -92,12 +237,12 @@ nav ul li a {
         display: block; 
     }
 
-    .menu-toggle svg {
+    .menu-toggle .header-svg {
         fill: #1b414b; 
         cursor: pointer; 
     }
 
-    .menu-toggle svg:hover {
+    .menu-toggle .header-svg:hover {
         opacity: 0.7; 
     }
 
@@ -105,7 +250,7 @@ nav ul li a {
         display: block; 
     }
 
-    .main-menu ul {
+    .main-menu .header-ul {
         background-color: #fbfbfb;
         border: 1px solid #fbfbfb; 
         border-radius: 8px; 
@@ -116,17 +261,42 @@ nav ul li a {
         z-index: 999; 
     }
 
-    .main-menu ul li {
+    .main-menu .header-ul .header-li {
         display: block; 
         margin-bottom: 10px; 
     }
 
-    .main-menu ul li a {
+    .main-menu .header-ul .header-li .header-a {
         color: #1b414b; 
         text-decoration: none; 
         font-size: 16px; 
         display: block; 
     }
+    
+    
+    .main-menu {
+        display: none;
+        width: 375px;
+        height: 812px;
+        background: #0e1823;
+        position: absolute;
+        top: 48px; 
+        left: 0;
+        z-index: 1000; 
+        padding: 20px; 
+        box-sizing: border-box;
+    }
+
+    
+    .social-icons {
+        position: absolute;
+        bottom: 24px; 
+        left: 50%; 
+        transform: translateX(-50%); 
+    }
 }
 
 
+.menu-toggle:checked + .main-menu {
+    display: block; 
+}

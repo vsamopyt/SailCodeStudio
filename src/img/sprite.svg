@@ -15,8 +15,14 @@
     <symbol id="icon-cross" viewBox="0 0 32 32">
       <path fill="#055545" d="M32 3.721 28.279 0 16 12.279 3.721 0 0 3.721 12.279 16 0 28.279 3.721 32 16 19.721 28.279 32 32 28.279 19.721 16 32 3.721z" style="fill:var(--color1, #055545)"/>
     </symbol>
-    <symbol id="icon-burger-menu" viewBox="0 0 77 32">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="8" d="M4.8 27.2H72M4.8 4.8H72"/>
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.5 17.5H24.5M3.5 10.5H24.5" stroke="#1B414B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+<symbol id="button-1" viewBox="0 0 32 32">
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.8571" d="M4 20h24M4 12h24"></path>
+    </symbol>
+     <symbol id="button-2" viewBox="0 0 77 32">
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="8" d="M4.8 27.2h67.2M4.8 4.8h67.2"></path>
     </symbol>
   </defs>
 </svg>
