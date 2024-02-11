@@ -1,7 +1,3 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
 
 header {
     border: 1px solid #fbfbfb;
@@ -130,7 +126,9 @@ header {
 }
 
 .backdrop {
-    background-color: rgba(46, 47, 66, 0.4); /* прозрачный фон */
+    background-color: rgba(46, 47, 66, 0.4); 
+    width: 375px;
+    height: 812px;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -140,25 +138,26 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
   
   .is-open {
     opacity: 1;
-    visibility: visible;
+    visibility:hidden;
     pointer-events: auto;
   }
   
   .modal {
-    width: 335px;
+    min-width: 335px;
     background-color: #0E1823; 
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 12px;
     position: absolute;
-    top: 68px;
+    top: 0px;
+    height: 100vh;
   }
   
   .modal-header {
@@ -166,8 +165,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 8px; /* отступ снизу для разделения от кнопок */
-    background-color: #fff; /* белый фон для заголовка */
+    margin-bottom: 8px; 
+    background-color: #fff; 
     border-radius: 5px;
     padding: 8px;
   }
@@ -191,7 +190,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px; /* отступ от надписи yachtjet и кнопки SVG */
+    margin-top: 120px; 
   }
   
   .menu-btn {
@@ -206,6 +205,7 @@ header {
     padding: 8px 16px;
     margin-bottom: 8px;
     transition: background-color 0.3s ease;
+    text-transform: uppercase;
   }
   
   .menu-btn:hover {
@@ -217,25 +217,28 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 120px;
+     
   }
   
   .social-icon-modal {
     display: inline;
-    margin-right: 8px; 
+    margin-right: 8px;
+    fill: #fbfbfb;
   }
   
   .modal-svg {
     width: 24px;
     height: 24px;
-    transition: filter 0.3s ease;
+    fill: #fbfbfb;
+    margin-bottom: 10px;
   }
   
   .modal-svg:hover {
-    filter: grayscale(100%);
+    fill: rgba(251, 251, 251, 0.8);
   }
 
   .social-icon-modal:hover .modal-svg {
-    fill: #ffffff; 
+    fill: rgba(251, 251, 251, 0.8);
   }
   
   
