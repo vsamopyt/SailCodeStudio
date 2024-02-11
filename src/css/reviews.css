@@ -30,7 +30,7 @@
 }
 
 .reviews-list-item {
-  min-width: 335px;
+  max-width: 335px;
   background-color: #fbfbfb;
   display: flex;
   flex-direction: column;
