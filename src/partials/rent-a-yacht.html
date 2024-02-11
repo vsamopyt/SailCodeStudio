@@ -8,6 +8,8 @@
             class="rent-input"
             type="text"
             name="user-name"
+            pattern="[A-Za-z]{3,}\s[A-Za-z]{3,}"
+            title="Full name consists of 2 words containing at least 3 characters."
             placeholder="Full Name"
           />
           <input
@@ -15,12 +17,16 @@
             type="email"
             name="user-email"
             placeholder="Email"
+            pattern="[A-Za-z]{@}[A-Za-z]"
+            title="Email contains only Latin letters and @"
           />
           <input
             class="rent-input"
             type="tel"
             name="user-tel"
             placeholder="Phone number"
+            pattern="[0-9]{3}"
+            title="Mobile phone number consists of 10 digits"
           />
           <textarea
             class="rent-form-comment"
@@ -61,7 +67,7 @@
         media="(max-width: 767px)"
       />
       <img
-        src="./img/rent-section-img/rent-yacht-section-mob-1x.png"
+        src="./img/rent-section-img/rent-yacht-section-descktop1440-1x.png"
         alt="Rent a yacht"
         class="rent-img"
       />

@@ -74,9 +74,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .rent-title-form {
-    /* position: relative; */
-    padding-left: 116px;
+  .rent-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .section-rents {
@@ -129,16 +130,11 @@
 
 @media screen and (min-width: 1280px) {
   .rent-container {
-    display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     gap: 50px;
   }
 
-  .rent-title-form {
-    /* position: static; */
-    padding-left: 0;
-  }
   .rent-img {
     border-radius: 0;
   }
