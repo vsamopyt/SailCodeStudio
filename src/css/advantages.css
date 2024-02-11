@@ -4,16 +4,14 @@
 
 .avantages-container {
     width: 100%;
-    max-width: 320px;
     padding-right: 20px;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
    
-
 }
 
 .visully-hidden-advantages {
@@ -30,16 +28,19 @@
 }
 
 .avantages-list {
+ max-width: 335px; 
 list-style-type: none;
 background-color: #1B414B;
 border-radius: 18px;
 padding-top: 80px;
 padding-bottom: 80px;
+
 }
+
 .rounded-rectangle {
     background-color: #FBFBFB;
     background-color: rgba(251, 251, 251, 0.1);
-    max-width: 295px;
+    max-width: 250px;
     height: 2px;
     border-radius: 18px;
     margin-top: 18px;
@@ -49,6 +50,14 @@ padding-bottom: 80px;
     margin-bottom: 40px;
 }
 .avantages-subtitle {
+font-style: Inter;
+font-weight: 500;
+font-size: 28px;
+line-height: 28px;
+letter-spacing: -0.05;
+
+
+
 
 }
 .avantages-text {
@@ -58,55 +67,57 @@ font-weight: 400;
 font-size: 12px;
 line-height: 14px;
 letter-spacing: -0.02;
-min-width: 292px;
+max-width: 250px;
+overflow-wrap: break-word;
 
 }
 .advantages-image {
-/* background-image: url(./src/); */
-
-background-size: cover;
-background-position: center;
-width: 335px;
 height: 424px;
+
+}
+.avantages-list,
+.advantages-image img {
+    width: 100%;
 }
 
 
 @media screen and (min-width: 768px) {
     .avantages-container {
         min-width: 768px;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-     }
-     .avantages-list {
         display: flex;
-       
+       }
+     .avantages-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        max-width: 704px;
         padding-left: 32px;
         padding-right: 32px;
         padding-top: 90px;
         padding-bottom: 90px;
-        float: left;
-        width: 70%;
+        
     }
        .avantages-item {
-        
-        width: calc((100% - 3 * 32px) / 2);
-        overflow: hidden;
-        margin: 0 16px 16px 0;
-        box-sizing: border-box;
-        /* float: none; */
+        width: 304px; 
+        height: 85px;
      }
         .rounded-rectangle {
         max-width: 304px;
         }
 
         .advantages-image {
-             /* background-image: url(./src/img/advantagesimages/advantages-tab.png); */
+             flex: 1;
+             width: 100%;
              background-size: cover;
              background-position: center;
              height: 424px;
-             float: right;
              width: 704px;
+         }
+
+         .avantages-subtitle {
+         font-size: 32px;
+         line-height: 32px;
+         letter-spacing: -0.05;
          }
          
 }
@@ -115,37 +126,29 @@ height: 424px;
 
 @media screen and (min-width: 1280px) {
     .avantages-container {
+        align-items: center;
         min-width: 1280px;
         flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
+        justify-content: space-between;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        
       }
            
-    
-           .avantages-item {
-            width: calc((100% - 3 * 32px) / 2);
-            overflow: hidden;
-           }
-
-            .avantages-list {
-                float: left;
-                width: 70%;
+    .avantages-list {
+             max-height: 424px;
             }
 
-            .rounded-rectangle {
+        .rounded-rectangle {
                 min-width: 280px;
             }
-
-
-
-
-           .advantages-image {
-               /* background-image: url(./src/img/advantagesimages/advantages-desck.png); */
-               background-size: cover;
-               background-position: center;
-               height: 432px;
-               float: right;
-               width: 432px;
-           }
+        .advantages-image {
+            min-height: 424px;
+            width: 432px;
+            object-fit: cover;
+            
+               }
     
      }
