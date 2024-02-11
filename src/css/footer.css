@@ -15,9 +15,22 @@
 
 .footer-navigation {
   display: flex;
-  margin-inline: auto;
 }
-
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .footer-navigation {
+    justify-content: space-around;
+  }
+  .footer-link-logo {
+    margin-right: 0px;
+    padding-left: 0px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .footer-link-logo {
+    margin-right: 37px;
+    padding-left: 30px;
+  }
+}
 .footer-link-logo {
   display: block;
   font-family: var(--font-family);
@@ -25,8 +38,6 @@
   font-size: 14px;
   letter-spacing: -0.03em;
   color: #fbfbfb;
-  margin-right: 37px;
-  padding-left: 30px;
 }
 
 .footer-list-menu {
