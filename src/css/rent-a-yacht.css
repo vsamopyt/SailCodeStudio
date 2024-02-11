@@ -150,4 +150,13 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .rent-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .rent-container {
+    max-width: 1320px;
+  }
 }
