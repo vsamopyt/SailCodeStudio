@@ -12,9 +12,12 @@ header {
     align-items: center;
     padding: 10px 20px;
     margin-inline: auto;
-    top: 20px;
+    position: fixed;
+    top: 32px;
     max-width: 1240px;
     width: calc(100% - 40px);
+    left: 50%;
+  transform: translateX(-50%);
 }
 
 .logo-header {
