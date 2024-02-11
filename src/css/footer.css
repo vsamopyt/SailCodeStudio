@@ -5,7 +5,6 @@
   padding-top: 40px;
 }
 .footer-container {
-  /* outline: 1px solid red; */
   max-width: 355px;
   border-radius: 24px 24px 0 0;
   background: #1b414b;
@@ -29,6 +28,10 @@
   .footer-link-logo {
     margin-right: 37px;
     padding-left: 30px;
+  }
+  .footer-item-menu {
+    max-width: 66px;
+    max-height: 40px;
   }
 }
 .footer-link-logo {
