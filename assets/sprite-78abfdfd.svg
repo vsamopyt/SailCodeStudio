@@ -18,5 +18,11 @@
     <symbol id="icon-burger-menu" viewBox="0 0 77 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="8" d="M4.8 27.2H72M4.8 4.8H72"/>
     </symbol>
+    <symbol id="button-1" viewBox="0 0 32 32">
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.8571" d="M4 20h24M4 12h24"></path>
+    </symbol>
+    <symbol id="button-2" viewBox="0 0 77 32">
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="8" d="M4.8 27.2h67.2M4.8 4.8h67.2"></path>
+    </symbol>
   </defs>
 </svg>
