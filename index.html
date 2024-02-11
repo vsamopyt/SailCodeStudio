@@ -17,7 +17,7 @@
     />
     
     <script type="module" crossorigin src="/sail-code-studio/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/sail-code-studio/assets/index-94c74c6b.css">
+    <link rel="stylesheet" href="/sail-code-studio/assets/index-4562ce35.css">
   </head>
   <body>
     <header>
@@ -354,6 +354,8 @@
             class="rent-input"
             type="text"
             name="user-name"
+            pattern="[A-Za-z]{3,}\s[A-Za-z]{3,}"
+            title="Full name consists of 2 words containing at least 3 characters."
             placeholder="Full Name"
           />
           <input
@@ -361,12 +363,16 @@
             type="email"
             name="user-email"
             placeholder="Email"
+            pattern="[A-Za-z]{@}[A-Za-z]"
+            title="Email contains only Latin letters and @"
           />
           <input
             class="rent-input"
             type="tel"
             name="user-tel"
             placeholder="Phone number"
+            pattern="[0-9]{3}"
+            title="Mobile phone number consists of 10 digits"
           />
           <textarea
             class="rent-form-comment"
@@ -395,7 +401,7 @@
         media="(max-width: 767px)"
       />
       <img
-        src="/sail-code-studio/assets/rent-yacht-section-mob-1x-0d0ec9bd.png"
+        src="/sail-code-studio/assets/rent-yacht-section-descktop1440-1x-a5524f99.png"
         alt="Rent a yacht"
         class="rent-img"
       />
