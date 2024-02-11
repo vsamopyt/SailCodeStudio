@@ -148,10 +148,10 @@ height: 424px;
         min-width: 1210px;
         flex-direction: row;
         justify-content: space-between;
-        /* padding-right: 50px;
+        padding-right: 50px;
         padding-left: 50px;
-        padding-top: 25px;
-        padding-bottom: 25px; */
+        padding-top: 20px;
+        padding-bottom: 20px;
         
       }
           .avantages-list .avantages-item {
