@@ -194,6 +194,9 @@ height: 424px;
                 padding-right: 16px;
                 
             }
+            .advantages-image {
+                min-width: 540px;
+            }
             
          }
 
