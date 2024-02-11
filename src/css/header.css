@@ -38,6 +38,7 @@ header {
 .header-ul .header-li {
     display: inline;
     margin-right: 16px; 
+    align-items: center;
 }
 
 .header-a {
@@ -81,6 +82,7 @@ header {
 .nav-header {
     display: inline-flex;
     gap: 8px;
+    align-items: center;
 }
 
 .nav-link {
