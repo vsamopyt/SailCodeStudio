@@ -3,6 +3,8 @@
 }
 .footer {
   padding-top: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .footer-container {
   max-width: 355px;
