@@ -2,7 +2,7 @@
   background-color: transparent;
   display: flex;
   flex-direction: column;
-  padding-bottom: 40px;
+  padding: 0 15px 40px 15px;
   max-width: 335px;
   margin: 0 auto;
 }
