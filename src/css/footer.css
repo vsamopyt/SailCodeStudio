@@ -3,8 +3,8 @@
 }
 .footer {
   padding-top: 40px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .footer-container {
   max-width: 355px;
@@ -189,6 +189,8 @@
   }
   .footer {
     padding-top: 75px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }
 /* Desktop 1280px */
@@ -227,5 +229,9 @@
   }
   .footer-link-logo {
     margin-right: 409px;
+  }
+  .footer {
+    padding-right: 25px;
+    padding-left: 25px;
   }
 }
