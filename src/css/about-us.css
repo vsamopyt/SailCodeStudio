@@ -1,5 +1,6 @@
 .container {
   padding-inline: 0;
+  max-width: 335px;
 }
 
 .about-us {
@@ -46,11 +47,13 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding-inline: 0;
   }
 
   .about-us {
     width: 704px;
   }
+
   .about-us-container {
     padding: 50px 0 50px 32px;
   }
@@ -62,7 +65,7 @@
   }
 
   .about-us-block {
-    width: 409px;
+    width: 389px;
   }
 
   .about-us-subtitle {
@@ -71,6 +74,7 @@
 
   .about-us-text {
     font-size: 13px;
+    line-height: 1.15;
   }
 }
 
@@ -78,6 +82,7 @@
   .container {
     max-width: 1280px;
     width: 100%;
+    padding-inline: 0;
   }
 
   .about-us {
@@ -91,6 +96,10 @@
     justify-content: space-between;
   }
 
+  .about-us-title {
+    width: 537px;
+  }
+
   .about-us-block {
     padding: 0;
     width: 354px;
@@ -100,8 +109,18 @@
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
+    padding-inline: 0;
   }
+
   .about-us {
     width: 1340px;
+  }
+
+  .about-us-title {
+    padding-bottom: 0;
+  }
+
+  .about-us-block {
+    width: 404px;
   }
 }
