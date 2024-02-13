@@ -123,10 +123,7 @@
   margin-bottom: 6px;
 }
 
-/* .yachts-item-value {
-  display: flex;
-  align-items: flex-end;
-} */
+
 
 
 .yahts-btn-link {
@@ -214,6 +211,11 @@
   display: flex;
   gap: 32px;
   margin-bottom: 50px;
+}
+
+.yahts-btn-link {
+  width: 179px;
+  height: 52px;
 }
 
 }
