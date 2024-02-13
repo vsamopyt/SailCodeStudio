@@ -1,6 +1,6 @@
 
 .header-wraper {
-  width:334px;
+  width:335px;
 }
 
 header {
@@ -265,7 +265,7 @@ header {
   
 
 /* Медиа-запрос для мобильных устройств */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     
   header {
     border: 1px solid #fbfbfb;
@@ -865,6 +865,8 @@ header {
   }
   
   .modal-header {
+    padding-left: 20px;
+    padding-right:20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -872,7 +874,7 @@ header {
     margin-bottom: 8px; 
     background-color: #fff; 
     border-radius: 5px;
-    padding: 8px;
+    /* padding: 8px; */
   }
   
   .logo-modal {
@@ -986,7 +988,7 @@ header {
     left:50%;
     display: flex;
     flex-direction: column;
-    width:324px;
+    width:335px;
     height: 100vh;
     background: #FFF;
     padding: 20px 24px 40px 20px;
