@@ -852,7 +852,7 @@ header {
   }
   
   .modal {
-    min-width: 335px;
+    max-width: 375px;
     background-color: #0E1823; 
     border-radius: 5px;
     display: flex;
@@ -865,6 +865,7 @@ header {
   }
   
   .modal-header {
+    max-width:335;
     padding-left: 20px;
     padding-right:20px;
     width: 100%;
@@ -1006,10 +1007,34 @@ header {
   flex-shrink: 0;
   margin-bottom:16px;
 }
+.logo-modal {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+  color: #1b414b;
+}
 
 
 .is-open {
   opacity: 1;
   visibility:visible;
   pointer-events: auto;
+}
+
+.modal-header {
+  padding-left: 20px;
+  padding-right:20px;
+
+  align-items: center;
+}
+
+
+.modal-close-btn {
+  display: flex;
+  align-items: center;
+}
+
+.modal {
+ max-width: 375px;
+ 
 }
